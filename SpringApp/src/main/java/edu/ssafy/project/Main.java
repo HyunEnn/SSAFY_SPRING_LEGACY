@@ -16,7 +16,8 @@ public class Main {
 //		phone.takePicture();
 //		phone.call();
 		
-		new AppDispatcher(cxt).go();
+//		new AppDispatcher(cxt).go();
+		((AppDispatcher) cxt.getBean("AppDispatcher")).go();
 	}
 
 }
